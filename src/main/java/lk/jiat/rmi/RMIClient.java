@@ -1,7 +1,7 @@
 package lk.jiat.rmi;
 
-import java.rmi.Remote;
-import java.rmi.RemoteException;
+import lk.jiat.rmi.client.Message;
+
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
@@ -15,7 +15,7 @@ public class RMIClient {
                 System.out.println(s);
             }
 
-            lk.jiat.rmi.Message message = (Message) registry.lookup("message_service");
+            Message message = (Message) registry.lookup("message_service");
             String msg = message.hello();
 
             System.out.println(msg);

@@ -1,4 +1,4 @@
-package lk.jiat.rmi;
+package lk.jiat.rmi.client;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
