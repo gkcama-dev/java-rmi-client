@@ -1,6 +1,8 @@
 package lk.jiat.rmi.model;
 
-public class Data {
+import java.io.Serializable;
+
+public class Data implements Serializable {
 
     private int id;
     private String name;
